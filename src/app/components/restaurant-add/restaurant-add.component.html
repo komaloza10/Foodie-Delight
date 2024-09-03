@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>Add New Restaurant</h2>
+    <!-- ngSubmit)="onSubmit()" -->
+    <!-- [formGroup]="restaurantForm" -->
+    <form >
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input id="name" formControlName="name" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="location">Location:</label>
+        <input id="location" formControlName="location" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="rating">Rating:</label>
+        <input id="rating" formControlName="rating" type="number" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="cuisineType">Cuisine Type:</label>
+        <input id="cuisineType" formControlName="cuisineType" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" formControlName="description" class="form-control"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Restaurant</button>
+    </form><br><br>
+  </div>
+  

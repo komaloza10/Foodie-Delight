@@ -1,0 +1,29 @@
+button {
+  width: 237px;
+  height: 40px;
+  margin-left:17px;
+  border-radius:5px;
+  background-color:#5C4033;
+  color:white;
+  border: none;
+}
+
+button:hover{
+    background-color:#C19A6B;
+    color:#f8f8f8; 
+    cursor:pointer;
+}
+
+  h2{
+    color: #5C4033;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  input,textarea{
+    width: 60%;
+  }
+
+  .container{
+    margin-left: 28%
+  }

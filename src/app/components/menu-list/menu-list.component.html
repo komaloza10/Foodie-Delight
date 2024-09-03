@@ -1,0 +1,100 @@
+
+    <div class="menu-container">
+        <header class="menu-header">
+            <h1>Restaurant Name</h1>
+            <p>Discover our delectable dishes!</p>
+        </header>
+        <section class="menu-category">
+            <h2>Appetizers</h2>
+            <ul>
+                <li>
+                    <div class="menu-item">
+                        <img src="../assets/image/spring-rolls.jpg" alt="Spring Rolls" class="menu-image">
+                        <div class="menu-description">
+                            <h3>Spring Rolls</h3>
+                            <p>Freshly made spring rolls with a dipping sauce.</p>
+                            <span class="price">$5.99</span>
+                        </div>
+                        <button (click)="openDeleteConfirmation()" class="delete-button">Delete</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <img src="../assets/image/garlic-bread.jpg" alt="Garlic Bread" class="menu-image">
+                        <div class="menu-description">
+                            <h3>Garlic Bread</h3>
+                            <p>Crispy bread with garlic and herbs.</p>
+                            <span class="price">$3.99</span>
+                        </div>
+                        <button (click)="openDeleteConfirmation()" class="delete-button">Delete</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <img src="../assets/image/Stuffed Mushrooms.jpg" alt="Garlic Bread" class="menu-image">
+                        <div class="menu-description">
+                            <h3>Stuffed Mushrooms</h3>
+                            <p>Mushrooms stuffed with cheese and herbs.</p>
+                            <span class="price">$10.00</span>
+                        </div>
+                        <button (click)="openDeleteConfirmation()" class="delete-button">Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="menu-category">
+            <h2>Main Courses</h2>
+            <ul>
+                <li>
+                    <div class="menu-item">
+                        <img src="../assets/image/Grilled Salmon.jpg" alt="Garlic Bread" class="menu-image">
+                        <div class="menu-description">
+                            <h3>Grilled Salmon</h3>
+                            <p>Served with lemon and dill sauce.</p>
+                            <span class="price">$22.00</span>
+                        </div>
+                        <button (click)="openDeleteConfirmation()" class="delete-button">Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="menu-category">
+            <h2>Desserts</h2>
+            <ul>
+                <li>
+                    <div class="menu-item">
+                        <img src="../assets/image/tiramisu.jpg" alt="Garlic Bread" class="menu-image">
+                        <div class="menu-description">
+                            <h3>Tiramisu</h3>
+                            <p>Classic Italian dessert with coffee and mascarpone.</p>
+                            <span class="price">$7.00</span>
+                        </div>
+                        <button (click)="openDeleteConfirmation()" class="delete-button">Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="menu-category">
+            <h2>Drinks</h2>
+            <ul>
+                <li>
+                    <div class="menu-item">
+                        <img src="../assets/image/beer.jpg" alt="Garlic Bread" class="menu-image">
+                        <div class="menu-description">
+                            <h3>Craft Beer</h3>
+                            <p>Locally brewed craft beer.</p>
+                            <span class="price">$6.00</span>
+                        </div>
+                        <button (click)="openDeleteConfirmation()" class="delete-button">Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <div class="menu-actions">
+            <button routerLink="/menu-add" routerLinkActive="active" class="add-button">Add</button>
+        </div>
+    </div>
+
+

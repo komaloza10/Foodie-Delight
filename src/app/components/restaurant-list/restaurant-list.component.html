@@ -1,0 +1,67 @@
+
+<div *ngIf="errorMessage" class="error">
+  {{ errorMessage }}
+</div>
+
+<div class="container">
+    <h1>Restaurant List</h1>
+    <div class="restaurant-list" id="restaurant-list">
+      <div class="restaurant-list">
+        <div>
+          <!-- Restaurant with static data  -->
+          <div class="restaurant-card">
+            <img src="../assets/image/rest1.jpg" alt="Restaurant 1">
+            <h2>Restaurant 1</h2>
+            <p>Address: 123 Main St, City</p>
+            <p>Rating: ⭐⭐⭐⭐</p>
+            <p>Cuisine: Italian</p>
+          </div>
+          <button class="edit-btn" routerLink="/menu-list" routerLinkActive="active">Menu</button>&nbsp;
+          <button class="edit-btn" routerLink="/restaurant-edit" routerLinkActive="active">Edit</button>&nbsp;
+          <button class="del-btn" (click)="openDeleteConfirmation()">Delete</button>
+        </div>
+        <div>
+          <div class="restaurant-card">
+            <img src="../assets/image/rest2.jpg" alt="Restaurant 2">
+            <h2>Restaurant 2</h2>
+            <p>Address: 456 Elm St, City</p>
+            <p>Rating: ⭐⭐⭐</p>
+            <p>Cuisine: Mexican</p>
+          </div>
+          <button class="edit-btn" routerLink="/menu-list" routerLinkActive="active">Menu</button>&nbsp;
+          <button class="edit-btn" routerLink="/restaurant-edit" routerLinkActive="active">Edit</button>&nbsp;
+          <button class="del-btn" (click)="openDeleteConfirmation()">Delete</button>
+        </div>
+        <div>
+          <div class="restaurant-card">
+            <img src="../assets/image/rest3.jpg" alt="Restaurant 3">
+            <h2>Restaurant 3</h2>
+            <p>Address: 789 Oak St, City</p>
+            <p>Rating: ⭐⭐⭐⭐⭐</p>
+            <p>Cuisine: Japanese</p>
+          </div>
+          <button class="edit-btn" routerLink="/menu-list" routerLinkActive="active">Menu</button>&nbsp;
+          <button class="edit-btn" routerLink="/restaurant-edit" routerLinkActive="active">Edit</button>&nbsp;
+          <button class="del-btn" (click)="openDeleteConfirmation()">Delete</button>
+        </div>
+
+        <!-- Restaurant with dynamic data -->
+        <ul *ngIf="!loading && restaurants.length > 0">
+          <li *ngFor="let restaurant of restaurants" class="restaurant-item" class="restaurant-card">
+            <img src="../assets/image/rest1.jpg" alt="Restaurant 1">
+            <h2>{{ restaurant.name }}</h2>
+            <p>{{ restaurant.address }}</p>
+            <p>Rating: {{ restaurant.rating }}</p>
+          <button class="edit-btn" (click)="viewMenu(restaurant.id)">Menu</button>&nbsp;
+          <button class="edit-btn" (click)="editRestaurant(restaurant.id)">Edit</button>&nbsp;
+          <button class="del-btn" (click)="openDeleteConfirmation()">Delete</button>
+          </li>
+        </ul>
+    </div>
+  </div>
+  <br>
+  <button id="add-restaurant-btn" routerLink="/restaurant-add" routerLinkActive="active">Add Restaurant</button>
+  
+  <div *ngIf="!loading && restaurants.length === 0">
+    <p>No restaurants found.</p>
+  </div>

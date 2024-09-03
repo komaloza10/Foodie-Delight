@@ -1,0 +1,36 @@
+h1{
+    color: #C19A6B;
+    font-family: cursive;
+    margin-left: 50px;
+    padding-left: 80px;
+    padding-top: 80px;
+    font-size: 50px;
+}
+
+p{
+    color: #C19A6B;
+}
+.container {
+    background-image: url('/assets/image/bg3.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+  }
+  *{
+    font-family: cursive;
+  }
+
+  button {
+    padding-left: 80px;
+    padding: auto;
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    background-color: 	#C19A6B	;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+  }

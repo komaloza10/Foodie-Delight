@@ -1,0 +1,56 @@
+/* Basic styles for the navbar */
+.navbar {
+    background-color: white;
+    padding: 40px;
+    color: white;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .navbar-logo a {
+    color: #5C4033;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight:bolder;
+    margin-top: 20px
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    margin: 0 15px;
+    font-size: 20px;
+  }
+  hr{
+    color:#5C4033;
+  }
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  /* .navbar-link:hover {
+    text-decoration: underline;
+  } */
+  
+  footer {
+    background-color: #5C4033 !important;
+    color: #ffff; 
+    /* position: fixed; */
+    /* bottom: 0; */
+    width: 100%; 
+    text-align: center;
+    height: 40px;
+}
